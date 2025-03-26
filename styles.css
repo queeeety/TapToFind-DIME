@@ -5,6 +5,10 @@ body {
     margin: 0;
 }
 
+.gap {
+    height: 3vh;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -18,18 +22,157 @@ body {
 .header .a {
     color: #DECAFF;
     font-family: "SF-Pro", sans-serif;
-    font-size: clamp(20px, 2vw, 100px);
+    font-size: clamp(20px, 1.7vw, 100px);
     font-weight: 700;
     line-height: normal;
 }
 
 .header div {
-    width: 162px;
-    height: 52px;
-    flex-shrink: 0;
     border-radius: 30px;
     background: rgba(132, 102, 168, 0.70);
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.dl{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.hero {
+    height: auto;
+    min-height: 10px;
+    width: 89%;
+    background-color: rgba(75, 63, 117, 0.70);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.hero h2 {
+    text-align: center;
+}
+
+.phones {
+    height: 60vh;
+}
+
+.slogan h1 {
+    font-size: 60px;
+}
+
+.slogan p1 {
+    font-size: medium;
+}
+
+.hero2 {
+    margin: auto;
+    height: 60vh;
+    display: flex;
+}
+
+.hero2 h1 {
+    margin: auto;
+    height: 10vh;
+    width: auto;
+    text-align: center;
+    font-size: 5.2vh;
+}
+
+.panel3phone {
+    height: 60vh;
+    padding: 10px;
+}
+
+.panel3 h2 {
+    font-size: 5.2vh;
+}
+
+.panel3 {
+    height: auto;
+    min-height: 10px;
+    width: auto;
+    background-color: rgba(75, 63, 117, 1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 40px;
+    border-radius: 40px;
+    margin: auto;   
+}
+
+.panel4 {
+    height: 60vh;
+    background-color: rgba(47, 38, 81, 0.70);
+    position: relative;
+    top: -40px;
+    display: flex;
+    justify-content: space-around; /* Distributes space evenly between text and image */
+    align-items: center; /* Vertically centers the content */
+    padding: 0 20px; /* Optional padding */
+    z-index: -1;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+}
+
+.vinyl {
+    height: 40vh; /* Sets the image height */
+    margin-left: 5px; /* Adds space between the text and the image */
+    flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+.panel4 h1 {
+    margin: 0; /* Removes default margin around the heading */
+    line-height: 1.4; /* Adjusts line spacing for the heading */
+    word-wrap: break-word; /* Prevents text overflow */
+    padding-right: 10vw;
+    text-align: center;
+    font-size: 5.2vh;
+}
+
+.vinyl-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.vinyl-buttons {
+    margin: auto;
+    height: auto;
+    width: 15vw;
+}
+
+.panel5 {
+    background-color: rgba(10, 5, 34, 1);
+    height: 60vh;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    align-items: center;
+}
+
+.panel5 h1 {
+    text-align: center;
+}
+
+.panel5 img {
+    height: 60vh;
+}
+
+.panel6 {
+    background-color: rgb(91, 76, 168);
+    height: 80vh;
+    position: relative;
+    top: -10vh;
+    z-index: -1;
+}
+
+
