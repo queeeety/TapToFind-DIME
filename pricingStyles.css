@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 2rem;
 }
 
 .title {
@@ -13,21 +14,42 @@
     display: flex;
     padding: 2rem;
     gap: 2rem;
+    width: 100%;
+    max-width: 1200px; /* Prevents the entire table from getting too wide */
+    justify-content: center;
 }
 
 .pricing-column {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(19, 13, 45, 0.7);
     padding: 10px;
     border-radius: 20px;
+    flex: 1; /* Makes columns grow to fill available space */
+    max-width: 400px; /* Limits maximum width of each column */
+    min-width: 50px; /* Ensures columns don't get too narrow */
+    height: auto;
 }
 
+.hidden-column{
+    margin-top: calc(120px + 2rem);
+    padding-top: 23px;
+
+
+}
 .accent-color {
     background-color: #4B3F75;
 }
-
+.pricing-inside-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Set an appropriate fixed height */
+    margin-bottom: 0.5rem;
+}
 .pricing-line {
     width: 100%;
     border: none;
@@ -36,12 +58,38 @@
     margin: 1rem auto;
     opacity: 0.5;
 }
-.pricing-title{
+.pricing-title {
     font-family: 'SF-Pro', sans-serif;
     font-weight: bold;
 }
 
-.pricing-text{
+.pricing-text {
     font-family: 'SF-Pro', sans-serif;
     font-weight: normal;
+    text-align: center;
+}
+
+.pricing-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(132, 102, 168, 0.70);
+}
+.button-accent-color {
+    background: rgba(19, 13, 45, 0.70);
+}
+.hidden-column p {
+    font-family: 'SF-Pro', sans-serif;
+}
+.pricing-button p {
+    font-family: 'SF-Pro', sans-serif;
+    font-weight: normal;
+    color: #DECAFF;
+}
+
+@media screen and (max-width: 800px) {
+    .hidden-column{
+        display: none;
+    }
 }
