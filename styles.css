@@ -22,12 +22,15 @@ body {
 .header .a {
     color: #DECAFF;
     font-family: "SF-Pro", sans-serif;
-    font-size: clamp(20px, 1.7vw, 100px);
+    font-size: clamp(20px, 2vw, 100px);
     font-weight: 700;
     line-height: normal;
 }
 
 .header div {
+    width: 162px;
+    height: 52px;
+    flex-shrink: 0;
     border-radius: 30px;
     background: rgba(132, 102, 168, 0.70);
     display: flex;
