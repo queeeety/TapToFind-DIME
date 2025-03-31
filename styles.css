@@ -1,19 +1,28 @@
+/* Reset and Base Styles */
 body {
     background-color: #0A0522;
     font-family: 'SF-Pro', sans-serif;
+    font-weight: 400;
     color: #DECAFF;
     margin: 0;
+}
+p,a {
+    font-family: 'SF-Pro', sans-serif;
+    font-weight: 400;
+    color: #DECAFF;
+
 }
 
 .gap {
     height: 3vh;
 }
 
+/* Header Styles */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 80px;
     background: rgba(47, 38, 81, 0.70);
     backdrop-filter: blur(2px);
     padding: 0 40px;
@@ -22,8 +31,8 @@ body {
 .header .a {
     color: #DECAFF;
     font-family: "SF-Pro", sans-serif;
-    font-size: clamp(20px, 2vw, 100px);
-    font-weight: 700;
+    font-size: clamp(20px, 1.5vw, 100px);
+    font-weight: 600;
     line-height: normal;
 }
 
@@ -38,13 +47,43 @@ body {
     align-items: center;
 }
 
-.dl{
+/*Bootstrap header fixes*/
+.navbar {
+    background: rgba(47, 38, 81, 0.70);
+}
+.navbar-custom{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-collapse {
+    flex-grow: 1;
+    display: flex !important;
+}
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    width: 100%;
+}
+.navbar a {
+    font-weight: 600;
+}
+.navbar-brand:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+}
+.navbar-nav .nav-link:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+/* Common Components */
+.dl {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
+/* Hero Section */
 .hero {
     height: auto;
     min-height: 10px;
@@ -75,6 +114,7 @@ body {
     font-size: medium;
 }
 
+/* Hero 2 Section */
 .hero2 {
     margin: auto;
     height: 60vh;
@@ -89,15 +129,7 @@ body {
     font-size: 5.2vh;
 }
 
-.panel3phone {
-    height: 60vh;
-    padding: 10px;
-}
-
-.panel3 h2 {
-    font-size: 5.2vh;
-}
-
+/* Panel 3 Section */
 .panel3 {
     height: auto;
     min-height: 10px;
@@ -112,38 +144,48 @@ body {
     margin: auto;
 }
 
+.panel3phone {
+    height: 60vh;
+    padding: 10px;
+}
+
+.panel3 h2 {
+    font-size: 5.2vh;
+}
+
+/* Panel 4 Section */
 .panel4 {
     height: 60vh;
     background-color: rgba(47, 38, 81, 0.70);
     position: relative;
     top: -40px;
     display: flex;
-    justify-content: space-around; /* Distributes space evenly between text and image */
-    align-items: center; /* Vertically centers the content */
-    padding: 0 20px; /* Optional padding */
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
     z-index: -1;
     padding-bottom: 10vh;
     padding-top: 10vh;
 }
 
-.vinyl {
-    height: 40vh; /* Sets the image height */
-    margin-left: 5px; /* Adds space between the text and the image */
-    flex-shrink: 0; /* Prevents the image from shrinking */
-}
-
 .panel4 h1 {
-    margin: 0; /* Removes default margin around the heading */
-    line-height: 1.4; /* Adjusts line spacing for the heading */
-    word-wrap: break-word; /* Prevents text overflow */
+    margin: 0;
+    line-height: 1.4;
+    word-wrap: break-word;
     padding-right: 10vw;
     text-align: center;
     font-size: 5.2vh;
 }
 
-.vinyl-container{
+.vinyl-container {
     display: flex;
     flex-direction: column;
+}
+
+.vinyl {
+    height: 40vh;
+    margin-left: 5px;
+    flex-shrink: 0;
 }
 
 .vinyl-buttons {
@@ -152,6 +194,7 @@ body {
     width: 15vw;
 }
 
+/* Panel 5 Section */
 .panel5 {
     background-color: rgba(10, 5, 34, 1);
     height: 60vh;
@@ -170,6 +213,7 @@ body {
     height: 60vh;
 }
 
+/* Panel 6 Section */
 .panel6 {
     background-color: rgb(91, 76, 168);
     height: 80vh;
@@ -178,4 +222,129 @@ body {
     z-index: -1;
 }
 
+/* Pricing Section */
+.main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.title {
+    color: #DECAFF;
+}
+
+.pricing-table {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.pricing-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(19, 13, 45, 0.7);
+    padding: 10px;
+    border-radius: 20px;
+    flex: 1;
+    max-width: 400px;
+    min-width: 50px;
+    height: auto;
+}
+
+.hidden-column {
+    margin-top: calc(120px + 2rem);
+    padding-top: 23px;
+}
+
+.hidden-column p {
+    font-family: 'SF-Pro', sans-serif;
+}
+
+.accent-color {
+    background-color: #4B3F75;
+}
+
+.pricing-inside-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.pricing-line {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: #DECAFF;
+    margin: 1rem auto;
+    opacity: 0.5;
+}
+
+/* Typography */
+.pricing-title {
+    font-family: 'SF-Pro', sans-serif;
+    font-weight: 600;
+}
+
+.pricing-text {
+    font-family: 'SF-Pro', sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+.label {
+    font-family: 'SF-Pro', sans-serif;
+    font-weight: 900;
+}
+
+.pos {
+    font-weight: 600;
+}
+
+/* Buttons */
+.pricing-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(132, 102, 168, 0.70);
+}
+
+.button-accent-color {
+    background: rgba(19, 13, 45, 0.70);
+}
+
+.pricing-button p {
+    font-family: 'SF-Pro', sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+    color: #DECAFF;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+    .hidden-column {
+        display: none;
+    }
+    .header .a {
+        font-size: 80%;
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .pricing-table {
+        display: inline;
+    }
+
+}
 
