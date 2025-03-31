@@ -60,7 +60,7 @@
 }
 .pricing-title {
     font-family: 'SF-Pro', sans-serif;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .pricing-text {
@@ -68,7 +68,11 @@
     font-weight: normal;
     text-align: center;
 }
+.label {
+    font-family: 'SF-Pro', sans-serif;
+    font-weight: 900;
 
+}
 .pricing-button {
     width: 100%;
     display: flex;
@@ -79,12 +83,18 @@
 .button-accent-color {
     background: rgba(19, 13, 45, 0.70);
 }
+
+.pos {
+    font-weight: 600;
+}
+
 .hidden-column p {
     font-family: 'SF-Pro', sans-serif;
 }
 .pricing-button p {
     font-family: 'SF-Pro', sans-serif;
-    font-weight: normal;
+    font-weight: bold;
+    font-size: 120%;
     color: #DECAFF;
 }
 
@@ -93,3 +103,10 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .pricing-table {
+        display: inline;
+    }
+}
+
