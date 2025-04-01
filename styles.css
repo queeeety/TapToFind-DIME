@@ -152,7 +152,10 @@ p,a {
 .panel3 h2 {
     font-size: 5.2vh;
 }
-
+.panel3 img {
+    max-width: 40%;
+    padding: 20px
+}
 /* Panel 4 Section */
 .panel4 {
     height: 60vh;
@@ -304,9 +307,17 @@ p,a {
 .label {
     font-family: 'SF-Pro', sans-serif;
     font-weight: 900;
+    padding:50px
 }
 
-.pos {
+.text-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.pos { /* Thats bold for pricing table */
     font-weight: 600;
 }
 
@@ -345,6 +356,12 @@ p,a {
     .pricing-table {
         display: inline;
     }
-
+    .panel3 {
+        flex-direction: column;
+    }
+    .panel3 img {
+        max-width: 80%;
+    }
 }
+
 
