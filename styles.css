@@ -48,24 +48,16 @@ p,a {
 }
 
 /*Bootstrap header fixes*/
-.navbar {
-    background: rgba(47, 38, 81, 0.70);
+.navbar-brand {
+    color: #DECAFF !important;
 }
-.navbar-custom{
-    display: flex;
-    justify-content: space-between;
+.navbar-nav .nav-link {
+    color: #DECAFF !important;
 }
-.navbar-collapse {
-    flex-grow: 1;
-    display: flex !important;
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(222, 202, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-.navbar-expand-lg .navbar-nav {
-    flex-direction: row;
-    width: 100%;
-}
-.navbar a {
-    font-weight: 600;
-}
+
 .navbar-brand:hover {
     color: #FFFFFF;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
@@ -73,6 +65,11 @@ p,a {
 .navbar-nav .nav-link:hover {
     color: #FFFFFF;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.btn:focus, .pricing-button, .navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 /* Common Components */
@@ -119,6 +116,9 @@ p,a {
     margin: auto;
     height: 60vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .hero2 h1 {
@@ -152,7 +152,10 @@ p,a {
 .panel3 h2 {
     font-size: 5.2vh;
 }
-
+.panel3 img {
+    max-width: 40%;
+    padding: 20px
+}
 /* Panel 4 Section */
 .panel4 {
     height: 60vh;
@@ -233,6 +236,9 @@ p,a {
 
 .title {
     color: #DECAFF;
+    font-family: 'SF-Pro', sans-serif;
+    font-weight: 900;
+    padding:50px
 }
 
 .pricing-table {
@@ -301,33 +307,61 @@ p,a {
     text-align: center;
 }
 
-.label {
-    font-family: 'SF-Pro', sans-serif;
-    font-weight: 900;
-}
 
-.pos {
+.text-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.pos { /* Thats bold for pricing table */
     font-weight: 600;
 }
 
 /* Buttons */
 .pricing-button {
     width: 100%;
+    height: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 10px;
     background: rgba(132, 102, 168, 0.70);
+    font-family: 'SF-Pro', sans-serif;
+    font-weight: normal;
+    font-size: 120%;
+    color: #DECAFF;
+    text-decoration: none;
 }
 
 .button-accent-color {
     background: rgba(19, 13, 45, 0.70);
 }
+.button-fixed-size {
+    width: 150px;
 
-.pricing-button p {
-    font-family: 'SF-Pro', sans-serif;
-    font-weight: bold;
-    font-size: 120%;
-    color: #DECAFF;
+}
+.pricing-button:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*Footer*/
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(47, 38, 81, 0.70);
+    margin: 0;
+    padding: 10px;
+}
+
+.footer p {
+    text-align: center;
+    color: white;
+    margin: 0;
 }
 
 /* Media Queries */
@@ -345,6 +379,12 @@ p,a {
     .pricing-table {
         display: inline;
     }
-
+    .panel3 {
+        flex-direction: column;
+    }
+    .panel3 img {
+        max-width: 80%;
+    }
 }
+
 
