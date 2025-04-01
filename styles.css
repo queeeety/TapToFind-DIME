@@ -48,24 +48,8 @@ p,a {
 }
 
 /*Bootstrap header fixes*/
-.navbar {
-    background: rgba(47, 38, 81, 0.70);
-}
-.navbar-custom{
-    display: flex;
-    justify-content: space-between;
-}
-.navbar-collapse {
-    flex-grow: 1;
-    display: flex !important;
-}
-.navbar-expand-lg .navbar-nav {
-    flex-direction: row;
-    width: 100%;
-}
-.navbar a {
-    font-weight: 600;
-}
+
+
 .navbar-brand:hover {
     color: #FFFFFF;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
@@ -325,22 +309,32 @@ p,a {
 /* Buttons */
 .pricing-button {
     width: 100%;
+    height: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 10px;
     background: rgba(132, 102, 168, 0.70);
+    font-family: 'SF-Pro', sans-serif;
+    font-weight: normal;
+    font-size: 120%;
+    color: #DECAFF;
+    text-decoration: none;
 }
 
 .button-accent-color {
     background: rgba(19, 13, 45, 0.70);
 }
+.button-fixed-size {
+    width: 150px;
 
-.pricing-button p {
-    font-family: 'SF-Pro', sans-serif;
-    font-weight: bold;
-    font-size: 120%;
-    color: #DECAFF;
 }
+.pricing-button:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*Footer*/
 
 .footer {
     display: flex;
@@ -350,6 +344,7 @@ p,a {
     margin: 0;
     padding: 10px;
 }
+
 .footer p {
     text-align: center;
     color: white;
