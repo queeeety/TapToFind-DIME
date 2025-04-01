@@ -119,6 +119,9 @@ p,a {
     margin: auto;
     height: 60vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .hero2 h1 {
@@ -236,6 +239,9 @@ p,a {
 
 .title {
     color: #DECAFF;
+    font-family: 'SF-Pro', sans-serif;
+    font-weight: 900;
+    padding:50px
 }
 
 .pricing-table {
@@ -304,11 +310,6 @@ p,a {
     text-align: center;
 }
 
-.label {
-    font-family: 'SF-Pro', sans-serif;
-    font-weight: 900;
-    padding:50px
-}
 
 .text-description {
     display: flex;
@@ -339,6 +340,20 @@ p,a {
     font-weight: bold;
     font-size: 120%;
     color: #DECAFF;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(47, 38, 81, 0.70);
+    margin: 0;
+    padding: 10px;
+}
+.footer p {
+    text-align: center;
+    color: white;
+    margin: 0;
 }
 
 /* Media Queries */
