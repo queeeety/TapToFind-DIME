@@ -54,7 +54,19 @@
     line-height: 1.6;
     font-size: 1.5rem;
 }
-  
+.text-market p {
+    font-size: 50px;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-family: inherit;
+}
+.text-descriptionM {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.8rem;
+}
 #financials-panel {
     background: linear-gradient(135deg, #4c3b7c 0%, #2f295a 100%);
     padding: 3rem 2rem;
@@ -111,5 +123,25 @@
     .growth-chart-container {
         height: 400px;
         padding: 20px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .user-testimonials {
+        grid-template-columns: 1fr;
+        margin: 1rem 0;
+    }
+    .testimonial {
+        padding: 1.5rem;
+        min-height: auto; 
+    }
+    .testimonial p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+    .testimonial-icon {
+        width: 35px;
+        height: 35px;
+        margin-right: 0.5rem;
     }
 }
