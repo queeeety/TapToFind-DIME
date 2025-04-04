@@ -55,10 +55,19 @@ text-decoration: underline;
     padding: 5px 10px; /* Adjust padding for better spacing */
 }
 
+.dl-container {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-left: 0; /* Reset margin to original */
+    gap: 10px; /* Add equal spacing between image and span */
+    transform: scale(0.8); /* Scale down the container */
+}
+
 .hero {
     height: auto;
     min-height: 10px;
-    width: 100%;
+    width: 100%; /* Reset width to full */
     background-color: rgba(75, 63, 117, 0.70);
     display: flex;
     justify-content: space-around;
@@ -67,14 +76,32 @@ text-decoration: underline;
     margin: auto;
 }
 
+.hero-button {
+    width: 35vw; /* Reset width to original */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.learn-more{
+    width: 35vw;
+    font-size: 1rem; /* Set font size in rem */
+}
+
 /* Add this media query at the bottom of your CSS file */
 @media (max-width: 768px) {
     .hero, .panel3, .panel4, .panel5 {
         flex-direction: column; /* Switches to vertical layout */
+        align-items: center; /* Centers items vertically */
     }
 
-    .hero, .panel3, .panel4, .panel5 {
-        align-items: center; /* Centers items vertically */
+    .dl-container{
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        margin-left: -10vw;
+    }
+
+    .slogan h1 {
+        margin-left: 15vw;
     }
 }
 
@@ -116,23 +143,24 @@ text-decoration: underline;
 }
 
 .phones {
-    height: 60vh;
+    height: 60vh; /* Reset height to original */
+    width: auto; /* Maintain aspect ratio */
 }
 
 .slogan h1 {
-    font-size: 60px;
+    font-size: 3rem;
+    width: 40vw;
 }
 
-.slogan p1 {
-    font-size: medium;
+.slogan span {
+    font-size: 2rem;
+    max-width: 5vw;
 }
 
 .hero2 {
     margin: auto;
-    height: 100vh; /* Set height to full viewport */
+    height: 100vh;
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
 }
 
 .hero2 h1 {
@@ -168,17 +196,19 @@ text-decoration: underline;
 
 .panel4 {
     margin: auto;
-    height: 60vh;
+    width: auto; /* Allow width to adjust dynamically */
+    height: auto; /* Allow height to adjust dynamically */
     background-color: rgba(47, 38, 81, 0.70);
     position: relative;
-    top: -40px;;
+    top: -40px;
     display: flex;
-    justify-content: space-around; /* Distributes space evenly between text and image */
-    align-items: center; /* Vertically centers the content */
-    padding: 0 20px; /* Optional padding */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 20px; /* Adjust border radius for consistency */
     z-index: -1;
-    padding-bottom: 10vh;
-    padding-top: 10vh;
+    height: 110vh;
 }
 
 .vinyl {
@@ -191,9 +221,9 @@ text-decoration: underline;
     margin: 0; /* Removes default margin around the heading */
     line-height: 1.4; /* Adjusts line spacing for the heading */
     word-wrap: break-word; /* Prevents text overflow */
-    padding-right: 10vw;
     text-align: center;
     font-size: 5.2vh;
+    padding: 20px; /* Add padding to ensure text stays inside the background */
 }
 
 .vinyl-container{
@@ -219,33 +249,26 @@ text-decoration: underline;
 
 .panel5 h1 {
     text-align: center;
+    height:50vh;
+    width:auto;
+    margin: auto;;
 }
 
 .panel5 img {
-    height: 60vh;
+    height: 60vw;
+    width: auto;
 }
 
 .panel6 {
     background-color: rgb(91, 76, 168);
-    height: 80vh;
+    height: 50vh;
     position: relative;
     top: -10vh;
     z-index: -1;
 }
 
-.hero-button {
-    max-width: 100px; /* Set a maximum width */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure proper layout */
-    margin: 10px auto; /* Center the button with spacing */
-}
-
-.dl-container .hero-button {
-    max-width: 100px; /* Set a maximum width */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure proper layout */
-    margin: 10px auto; /* Center the button with spacing */
-    object-fit: contain; /* Ensure the image does not stretch */
+.panel6 img {
+    height: 50vh;    
 }
 
 
