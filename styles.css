@@ -5,6 +5,14 @@ body {
     margin: 0;
 }
 
+.headerText {
+    text-decoration: none;
+}
+
+.headerText:hover {
+text-decoration: underline;
+}
+
 .gap {
     height: 3vh;
 }
@@ -57,6 +65,17 @@ body {
     padding-bottom: 40px;
     border-radius: 20px;
     margin: auto;
+}
+
+/* Add this media query at the bottom of your CSS file */
+@media (max-width: 768px) {
+    .hero, .panel3, .panel4, .panel5 {
+        flex-direction: column; /* Switches to vertical layout */
+    }
+
+    .hero, .panel3, .panel4, .panel5 {
+        align-items: center; /* Centers items vertically */
+    }
 }
 
 .hero h2 {
