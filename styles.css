@@ -447,4 +447,6 @@ p, a {
     }
 }
 
-
+.members {
+    size: 5px;
+}
