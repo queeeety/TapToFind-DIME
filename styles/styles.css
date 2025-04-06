@@ -16,7 +16,7 @@ h1 {
     transition: transform 0.3s ease-in;
 }
 
-.resizable ul {
+.resizable{
     margin: 10px;
 }
 
@@ -542,6 +542,18 @@ form {
 .contact-form textarea:-ms-input-placeholder {
     color: #4B3F75;
     opacity: 0.7;
+}
+
+.email {
+    font-weight: normal;
+    font-size: 1.1rem;
+
+}
+.email:hover {
+    color: white;
+    text-decoration: none;
+    background: transparent !important;
+
 }
 
 /* Media Queries */
