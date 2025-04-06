@@ -13,54 +13,39 @@ p, a {
     color: #DECAFF;
 }
 
-/* Text */
 
-.text-inside-blocks {
-    text-align: center;
-    font-size: 5.2vh;
-}
-
-/* Header Styles */
-.header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: auto; /* Allow height to adjust dynamically */
-    padding: 10px 20px; /* Adjust padding for flexibility */
-    background: rgba(47, 38, 81, 0.70);
-    backdrop-filter: blur(2px);
-    box-sizing: border-box; /* Include padding in width/height calculations */
-}
-
-.header .a {
-    color: #DECAFF;
-    font-family: "SF-Pro", sans-serif;
-    font-size: clamp(16px, 2vw, 24px); /* Responsive font size */
-    font-weight: 700;
-    text-decoration: none;
-    margin: 0 10px; /* Add spacing between links */
-}
-
-.header div {
-    width: auto; /* Allow width to adjust dynamically */
-    height: auto; /* Allow height to adjust dynamically */
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: rgba(132, 102, 168, 0.70);
+/* Typography */
+.text-description {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px 15px; /* Adjust padding for flexibility */
+    text-align: center;
+    font-size: 1.5rem;
 }
 
-.headerText {
-    text-decoration: none;
+.pos { /* Thats bold for pricing table */
+    font-weight: 600;
 }
 
-.headerText:hover {
-    text-decoration: underline;
+.pricing-text {
+    font-family: 'SF-Pro', sans-serif;
+    font-weight: normal;
+    text-align: center;
 }
+
+.pricing-title {
+    font-family: 'SF-Pro', sans-serif;
+    font-weight: 600;
+}
+
+.title {
+    color: #DECAFF;
+    font-family: 'SF-Pro', sans-serif;
+    font-weight: 900;
+    padding: 50px;
+    text-align: center;
+}
+
 
 /*Bootstrap header fixes*/
 .navbar-brand {
@@ -91,56 +76,78 @@ p, a {
     box-shadow: none !important;
 }
 
-/* Download button */
-.download-button{
 
+/* Button Styles */
+.download-button {
     color: #DECAFF;
     font-weight: bold;
     font-size: 1.5rem;
-
     border-radius: 30px;
     background: #6c5da8;
     max-width: 200px;
-
     margin: 20px auto;
 }
 
-.download-button:hover{
+.download-button:hover {
     color: white;
-    background: rgba(75, 63, 117, 0.70);;
+    background: rgba(75, 63, 117, 0.70);
 }
 
-/* Hero 2 Section */
+.pricing-button {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: rgba(132, 102, 168, 0.70);
+    font-family: 'SF-Pro', sans-serif;
+    font-weight: normal;
+    font-size: 120%;
+    color: #DECAFF;
+    text-decoration: none;
+}
+
+.pricing-button:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.button-accent-color {
+    background: rgba(19, 13, 45, 0.70);
+}
+
+.button-fixed-size {
+    width: 150px;
+}
+
+/* Main Layout Sections */
+.main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
 .hero2 {
     height: 100vh;
     min-height: 10px;
     width: 100%;
     max-width: 1000px;
-
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
     align-content: center;
-
     background: #0A0522;
     border-radius: 30px;
-
     padding: 40px;
     margin: auto;
-
     z-index: 1;
 }
 
-.hero2 h2, .panel3 h2, .panel4 h2, .panel5 h2, .panel6 h2, .panel7 h2, .carousel-div h2{
-    margin: auto;
-    width: auto;
-    text-align: center;
-    font-size: 5.2vh;
-    max-width: 70%;
-}
-
-/* Panel 3 Section */
 .panel3 {
     height: auto;
     min-height: 10px;
@@ -153,34 +160,9 @@ p, a {
     padding: 30px;
     border-radius: 40px;
     margin: auto;
-
     z-index: 1;
 }
 
-.card-holder {
-    height: auto;
-    min-height: 10px;
-    width: 100%;
-    max-width: 1000px;
-    background-color: rgba(75, 63, 117, 1);
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    padding: 30px;
-    border-radius: 40px;
-    margin: auto;
-
-    z-index: 1;
-}
-
-.inside-block-img {
-    max-width: 40%;
-    /*max-height: 100%;*/
-
-    max-height: 70vh;
-    padding: 0;
-    margin: auto;
-}
 .panel3SubBlock {
     display: flex;
     flex-direction: column;
@@ -190,10 +172,7 @@ p, a {
     max-width: 50%;
 }
 
-
-/* Panel 4 Section */
 .panel4 {
-
     margin: auto;
     width: auto;
     max-width: 1000px;
@@ -202,58 +181,120 @@ p, a {
     position: relative;
     top: -50px;
     padding: 80px 30px 30px 30px;
-
     display: flex;
     flex-direction: row;
-    justify-content: space-around; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
-
-    border-radius: 40px; /* Adjust border radius for consistency */
+    border-radius: 40px;
     z-index: -1;
 }
 
-
-/* Panel 5 Section */
 .panel5 {
     background: #130D2D;
     margin: 0 0 -50px 0;
-
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-
     height: 100vh;
-
     padding: 30px;
     align-items: center;
 }
 
-/* Panel 6 Section */
-.panel6 {
-    background-color: rgb(91, 76, 168);
-    height: 50vh;
-    position: relative;
-    top: -10vh;
-    z-index: -1;
+.accent-color {
+    background-color: #4B3F75;
 }
 
+/* Headings */
+.hero2 h2, .panel3 h2, .panel4 h2, .panel5 h2, .panel6 h2, .panel7 h2, .carousel-div h2 {
+    margin: auto;
+    width: auto;
+    text-align: center;
+    font-size: 5.2vh;
+    max-width: 70%;
+}
 
-/* Pricing Section */
-.main-block {
+/* Images */
+.inside-block-img {
+    max-width: 40%;
+    max-height: 70vh;
+    padding: 0;
+    margin: auto;
+}
+
+.vinyl {
+    height: 40vh;
+    margin-left: 5px;
+    flex-shrink: 0;
+}
+
+.vinyl-buttons {
+    margin: auto;
+    height: auto;
+    width: 15vw;
+}
+
+.vinyl-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
 }
 
-.title {
-    color: #DECAFF;
-    font-family: 'SF-Pro', sans-serif;
-    font-weight: 900;
-    padding: 50px;
+/* Carousel */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.carousel-div {
+    overflow: hidden;
+    padding: 30px 0;
+    white-space: nowrap;
+}
+
+.carousel-div:hover .carousel {
+    animation-play-state: paused;
+}
+
+.carousel {
+    display: inline-block;
+    animation: slide 25s infinite linear;
+    padding: 20px 0;
+}
+
+.carousel img {
+    height: 200px;
+    margin: 0 10px;
+}
+
+/* Pricing Components */
+.pricing-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
     text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.pricing-block h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #C5B4E3;
+}
+
+.pricing-table {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
 }
 
 .pricing-column {
@@ -288,26 +329,6 @@ p, a {
     opacity: 0.5;
 }
 
-.pricing-table {
-    display: flex;
-    padding: 2rem;
-    gap: 2rem;
-    width: 100%;
-    max-width: 1200px;
-    justify-content: center;
-}
-
-.pricing-text {
-    font-family: 'SF-Pro', sans-serif;
-    font-weight: normal;
-    text-align: center;
-}
-
-.pricing-title {
-    font-family: 'SF-Pro', sans-serif;
-    font-weight: 600;
-}
-
 .hidden-column {
     margin-top: calc(120px + 2rem);
     padding-top: 23px;
@@ -317,53 +338,65 @@ p, a {
     font-family: 'SF-Pro', sans-serif;
 }
 
-.accent-color {
-    background-color: #4B3F75;
-}
-
-.button-accent-color {
-    background: rgba(19, 13, 45, 0.70);
-}
-
-.button-fixed-size {
-    width: 150px;
-}
-
-.pricing-button {
+/* Cards */
+.card-holder {
+    height: auto;
+    min-height: 10px;
     width: 100%;
-    height: 50px;
+    max-width: 1000px;
+    background-color: rgba(75, 63, 117, 1);
     display: flex;
-    margin-top: auto;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background: rgba(132, 102, 168, 0.70);
-    font-family: 'SF-Pro', sans-serif;
-    font-weight: normal;
-    font-size: 120%;
-    color: #DECAFF;
-    text-decoration: none;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 30px;
+    border-radius: 40px;
+    margin: auto;
+    z-index: 1;
 }
 
-.pricing-button:hover {
+.card {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(19, 13, 45, 0.7);
+    border-radius: 30px;
+    width: 290px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card p {
     color: white;
-    text-decoration: none;
+    margin: 0;
 }
 
-/* Typography */
-.text-description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 1.5rem;
+.card h1 {
+    font-size: 2rem;
+    color: white;
 }
 
-.pos { /* Thats bold for pricing table */
-    font-weight: 600;
+.card ul {
+    list-style-type: disc;
+    margin: 1rem;
+    padding: 0;
 }
 
-/*Footer*/
+.card ul li {
+    margin: 0.5rem 0;
+}
+
+.card a:hover {
+    background-color: rgba(19, 13, 45, 1);
+}
+
+
+/* Footer */
 .footer {
     display: flex;
     align-items: center;
@@ -386,18 +419,17 @@ p, a {
     }
 
     .hero, .panel3, .panel4, .panel5, .panel6 {
-        flex-direction: column; /* Switch to vertical layout */
-        align-items: center; /* Center content */
-        text-align: center; /* Center text */
-
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .panel4 h1, .panel3 h2, .panel5 h1 {
-        padding: 0; /* Remove extra padding for better centering */
+        padding: 0;
     }
 
     .phones, .panel3phone, .vinyl, .panel5 img {
-        margin: 0 auto; /* Center images */
+        margin: 0 auto;
     }
 
     .panel3SubBlock {
@@ -420,6 +452,7 @@ p, a {
         flex-direction: column;
         align-items: center;
     }
+
     .card {
         width: 80%;
         margin: 20px auto;
@@ -432,123 +465,9 @@ p, a {
     }
 }
 
-
-
-.vinyl {
-    height: 40vh;
-    margin-left: 5px;
-    flex-shrink: 0;
-}
-
-.vinyl-buttons {
-    margin: auto;
-    height: auto;
-    width: 15vw;
-}
-
-.vinyl-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.members {
-    size: 5px;
-}
-
-
-@keyframes slide {
-    from{
-        transform: translateX(0);
+@media screen and (min-width: 3000px) {
+    .carousel-div {
+        max-width: 3000px;
     }
-    to{
-        transform: translateX(-100%);
 
-    }
-}
-
-
-.carousel-div {
-    overflow: hidden;
-    padding: 30px 0;
-    white-space: nowrap;
-
-}
-
-.carousel-div:hover .carousel{
-    animation-play-state: paused;
-}
-.carousel {
-    display: inline-block;
-    animation: 25s slide infinite linear;
-
-    padding: 20px 0;
-}
-
-.carousel img {
-    height: 200px;
-    margin: 0 10px;
-}
-
-.pricing-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    text-align: center;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.pricing-block h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #C5B4E3; /* Світлий фіолетовий для заголовка */
-}
-
-
-
-/* Картка тарифу */
-.card {
-    margin-left: 10px;
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(19, 13, 45, 0.7);
-    border-radius: 30px;
-    width: 290px;
-    padding: 20px;
-    text-align: left;
-    transition: transform 0.3s ease;
-}
-
-/* Ефект при наведенні */
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card p {
-    color: white;
-    margin: 0;
-}
-
-.card h1 {
-    font-size: 2rem;
-    color: white; /* Підкреслюємо ціну яскравішим фіолетовим */
-}
-
-/* Список переваг */
-.card ul {
-    list-style-type: disc;
-    margin: 1rem;
-    padding: 0;
-}
-
-.card ul li {
-    margin: 0.5rem 0;
-}
-
-
-.card a:hover {
-    background-color: rgba(19, 13, 45, 1);
 }
