@@ -169,10 +169,6 @@ p, a {
     max-width: 50%;
 }
 
-.panel3phone {
-    height: 60vh;
-    padding: 10px;
-}
 
 /* Panel 4 Section */
 .panel4 {
@@ -410,8 +406,6 @@ p, a {
     .pricing-table {
         display: inline;
     }
-
-
 }
 
 
@@ -431,8 +425,8 @@ p, a {
 .vinyl-container {
     display: flex;
     flex-direction: column;
+}
 
 .members {
     size: 5px;
-
 }
