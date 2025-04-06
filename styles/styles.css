@@ -24,13 +24,15 @@ p, a {
 }
 
 .pos { /* Thats bold for pricing table */
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
 .pricing-text {
     font-family: 'SF-Pro', sans-serif;
     font-weight: normal;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .pricing-title {
@@ -101,7 +103,7 @@ p, a {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background: rgba(132, 102, 168, 0.70);
+    background: #6c5da8;
     font-family: 'SF-Pro', sans-serif;
     font-weight: normal;
     font-size: 120%;
@@ -202,11 +204,11 @@ p, a {
 }
 
 .accent-color {
-    background-color: #4B3F75;
+    background: rgba(75, 63, 117, 1) !important;
 }
 
 /* Headings */
-.hero2 h2, .panel3 h2, .panel4 h2, .panel5 h2, .panel6 h2, .panel7 h2, .carousel-div h2 {
+.hero2 h2, .panel3 h2, .panel4 h2, .panel5 h2, .carousel-div h2 {
     margin: auto;
     width: auto;
     text-align: center;
@@ -410,6 +412,103 @@ p, a {
     text-align: center;
     color: white;
     margin: 0;
+}
+
+/* Feedback Form */
+.form-container {
+    height: auto;
+    min-height: 10px;
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(75, 63, 117, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 40px;
+    margin: 50px auto;
+}
+.contact-form {
+    background-color: #130D2D;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin: 30px 0;
+    color: #C5B4E3;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.contact-form label {
+    margin: 10px 0 0 10px;
+    font-size: 0.95rem;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    background-color: #C5B4E3;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0;
+    color: #0A0522;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.form-container button {
+    background-color: #130D2D;
+    border: none;
+    border-radius: 30px;
+    padding: 12px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #5337A4;
+}
+/*placeholder text*/
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #4B3F75; /* Change this to your desired color */
+    opacity: 0.7; /* Adjust opacity as needed */
+}
+
+/* For older browsers */
+.contact-form input::-webkit-input-placeholder,
+.contact-form textarea::-webkit-input-placeholder {
+    color: #4B3F75;
+    opacity: 0.7;
+}
+
+.contact-form input::-moz-placeholder,
+.contact-form textarea::-moz-placeholder {
+    color: #4B3F75;
+    opacity: 0.7;
+}
+
+.contact-form input:-ms-input-placeholder,
+.contact-form textarea:-ms-input-placeholder {
+    color: #4B3F75;
+    opacity: 0.7;
 }
 
 /* Media Queries */
