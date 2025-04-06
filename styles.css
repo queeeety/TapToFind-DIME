@@ -157,6 +157,21 @@ p, a {
     z-index: 1;
 }
 
+.card-holder {
+    height: auto;
+    min-height: 10px;
+    width: 100%;
+    max-width: 1000px;
+    background-color: rgba(75, 63, 117, 1);
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 30px;
+    border-radius: 40px;
+    margin: auto;
+
+    z-index: 1;
+}
 
 .inside-block-img {
     max-width: 40%;
@@ -401,11 +416,10 @@ p, a {
         margin: auto;
     }
 
-    .pricing-block .panel3 {
+    .card-holder {
         flex-direction: column;
         align-items: center;
     }
-
     .card {
         width: 80%;
         margin: 20px auto;
