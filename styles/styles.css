@@ -7,7 +7,7 @@ body {
     margin: 0;
 }
 
-p, a {
+p, a, ul {
     font-family: 'SF-Pro', sans-serif;
     font-weight: 400;
     color: #DECAFF;
@@ -16,6 +16,19 @@ h1 {
     transition: transform 0.3s ease-in;
 }
 
+.resizable ul {
+    margin: 10px;
+}
+
+.resizable li {
+    font-size: 1.5rem;
+    transition:  0.3s ease-in;
+}
+
+.resizable li:hover {
+    background: #2F2651;
+    border-radius: 20px;
+}
 
 /* Typography */
 .text-description {
