@@ -13,8 +13,11 @@ p, a {
     color: #DECAFF;
 }
 
-.gap {
-    height: 3vh;
+/* Text */
+
+.text-inside-blocks {
+    text-align: center;
+    font-size: 5.2vh;
 }
 
 /* Header Styles */
@@ -88,44 +91,44 @@ p, a {
     box-shadow: none !important;
 }
 
-/* Hero Section */
-.hero {
-    height: auto;
-    min-height: 10px;
-    width: 100%; /* Reset width to full */
-    background-color: rgba(75, 63, 117, 0.70);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 20px;
-    margin: auto;
+/* Download button */
+.download-button{
+
+    color: #DECAFF;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    border-radius: 30px;
+    background: #6c5da8;
+    max-width: 200px;
 }
 
-.hero h2 {
-    text-align: center;
-}
-
-.hero-button {
-    width: 35vw; /* Reset width to original */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.learn-more {
-    width: 35vw;
-    font-size: 1rem; /* Set font size in rem */
+.download-button:hover{
+    color: white;
+    background: rgba(75, 63, 117, 0.70);;
 }
 
 /* Hero 2 Section */
 .hero2 {
-    margin: auto;
     height: 100vh;
+    min-height: 10px;
+    width: 100%;
+    max-width: 1000px;
+
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
-    text-align: center;
+    align-content: center;
+
+    background: #0A0522;
+    border-radius: 30px;
+
+    padding: 40px;
+    margin: auto;
 }
 
-.hero2 h1 {
+.hero2 h2 {
     margin: auto;
     height: 10vh;
     width: auto;
@@ -144,21 +147,25 @@ p, a {
     justify-content: space-around;
     align-items: center;
     padding: 30px;
-    padding-bottom: 40px;
     border-radius: 40px;
     margin: auto;
-}
-
-.panel3 h2 {
-    font-size: 5.2vh;
 }
 
 .panel3 img {
     max-width: 40%;
     padding: 20px;
 }
-
+.inside-block-img {
+    max-width: 40%;
+    max-height: 100%;
+    padding: 0;
+}
 .panel3SubBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     max-width: 50%;
 }
 
@@ -169,37 +176,35 @@ p, a {
 
 /* Panel 4 Section */
 .panel4 {
+
     margin: auto;
-    width: auto; /* Allow width to adjust dynamically */
-    height: auto; /* Allow height to adjust dynamically */
+    width: auto;
+    max-width: 1000px;
+    height: auto;
     background-color: rgba(47, 38, 81, 0.70);
     position: relative;
-    top: -40px;
+    top: -50px;
+    padding: 80px 30px 30px 30px;
+
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Center content vertically */
+    flex-direction: row;
+    justify-content: space-around; /* Center content vertically */
     align-items: center; /* Center content horizontally */
-    padding: 20px; /* Add padding for spacing */
-    border-radius: 20px; /* Adjust border radius for consistency */
+    text-align: center;
+
+    border-radius: 40px; /* Adjust border radius for consistency */
     z-index: -1;
 }
 
-.panel4 h1 {
-    margin: 0;
-    line-height: 1.4;
-    word-wrap: break-word;
-    padding-right: 10vw;
-    text-align: center;
-    font-size: 5.2vh;
-}
 
 /* Panel 5 Section */
 .panel5 {
-    background-color: rgba(10, 5, 34, 1);
-    height: 60vh;
-    border-radius: 40px;
+    background: #130D2D;
+    height: 100vh;
+    border-radius: 30px;
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
     padding: 30px;
     align-items: center;
 }
@@ -243,6 +248,7 @@ p, a {
     font-family: 'SF-Pro', sans-serif;
     font-weight: 900;
     padding: 50px;
+    text-align: center;
 }
 
 .pricing-column {
@@ -373,31 +379,6 @@ p, a {
         display: none;
     }
 
-    .header .a {
-        font-size: 80%;
-        font-weight: normal;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .hero, .panel3, .panel4, .panel5 {
-        flex-direction: column; /* Switches to vertical layout */
-        align-items: center; /* Centers items vertically */
-    }
-
-    .dl-container {
-        width: 80vw;
-        display: flex;
-        justify-content: space-between;
-        margin-left: -10vw;
-    }
-
-    .slogan h1 {
-        margin-left: 15vw;
-    }
-}
-
-@media screen and (max-width: 768px) {
     .hero, .panel3, .panel4, .panel5, .panel6 {
         flex-direction: column; /* Switch to vertical layout */
         align-items: center; /* Center content */
@@ -411,32 +392,6 @@ p, a {
     .phones, .panel3phone, .vinyl, .panel5 img {
         margin: 0 auto; /* Center images */
     }
-}
-
-@media screen and (max-width: 768px) {
-    .header {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items */
-        text-align: center; /* Center text */
-    }
-
-    .header .a {
-        margin: 5px 0; /* Add vertical spacing between links */
-    }
-
-    .header div {
-        margin-top: 10px; /* Add spacing below links */
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .pricing-table {
-        display: inline;
-    }
-
-    .panel3 {
-        flex-direction: column;
-    }
 
     .panel3SubBlock {
         max-width: 100%;
@@ -445,8 +400,39 @@ p, a {
     .panel3 img {
         max-width: 80%;
     }
+
+    .inside-block-img {
+        max-width: 80%;
+    }
 }
+
+@media screen and (max-width: 500px) {
+    .pricing-table {
+        display: inline;
+    }
+
+
+}
+
+
+
+.vinyl {
+    height: 40vh;
+    margin-left: 5px;
+    flex-shrink: 0;
+}
+
+.vinyl-buttons {
+    margin: auto;
+    height: auto;
+    width: 15vw;
+}
+
+.vinyl-container {
+    display: flex;
+    flex-direction: column;
 
 .members {
     size: 5px;
+
 }
