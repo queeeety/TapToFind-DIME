@@ -576,6 +576,32 @@ form {
         width: 80%;
         margin: 20px auto;
     }
+
+    .navbar-nav .nav-link:hover {
+        color: #FFFFFF;
+        text-shadow: none; 
+        transform: none; 
+    }
+
+    .pricing-button:hover {
+        color: white;
+        text-decoration: none;
+        transform: none; 
+    }
+
+    .inside-block-img:hover, 
+    .vinyl-container:hover, 
+    .hero2 h2:hover, 
+    .panel3 h2:hover, 
+    .panel4 h2:hover, 
+    .panel5 h2:hover, 
+    .navbar-nav .nav-link:hover, 
+    .pricing-column h1:hover, 
+    .title:hover {
+        transform: none !important; 
+    }
+
+
 }
 
 @media screen and (max-width: 500px) {
