@@ -414,24 +414,7 @@ p, a {
 
 }
 
-.dl {
-    font-size: clamp(14px, 1.5vw, 18px); /* Responsive font size */
-    padding: 5px 10px; /* Adjust padding for better spacing */
-}
 
-.dl-container {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Center items horizontally */
-    margin-left: 0; /* Reset margin to original */
-    gap: 10px; /* Add equal spacing between image and span */
-    transform: scale(0.8); /* Scale down the container */
-}
-
-.phones {
-    height: 60vh; /* Reset height to original */
-    width: auto; /* Maintain aspect ratio */
-}
 
 .vinyl {
     height: 40vh;
@@ -448,4 +431,8 @@ p, a {
 .vinyl-container {
     display: flex;
     flex-direction: column;
+
+.members {
+    size: 5px;
+
 }
